@@ -20,14 +20,14 @@ __Contact__: xuebin[at]ualberta[dot]ca
 
 **(2020-May-16)** We fixed the upsampling issue of the network. Now, the model should be able to handle **arbitrary input size**. (Tips: This modification is to facilitate the retraining of U^2-Net on your own datasets. When using our pre-trained model on SOD datasets, please keep the input size as 320x320 to guarantee the performance.)
 
-**(2020-May-16)** We highly appreciate **Cyril Diagne** for building this fantastic AR project: [**AR Copy and Paste**](https://github.com/cyrildiagne/ar-cutpaste) using our **U^2-Net** (Qin *et al*, PR 2020) and [**BASNet**](https://github.com/NathanUA/BASNet)(Qin *et al*, CVPR 2019). The [**demo video**](https://twitter.com/cyrildiagne/status/1256916982764646402) in twitter has achieved over **5M** views, which is phenomenal and shows us more application probabilities of SOD.
+**(2020-May-16)** We highly appreciate **Cyril Diagne** for building this fantastic AR project: [**AR Copy and Paste**](https://github.com/cyrildiagne/ar-cutpaste) using our **U^2-Net** (Qin *et al*, PR 2020) and [**BASNet**](https://github.com/vaibhavmit074/remove-bg-2)(Qin *et al*, CVPR 2019). The [**demo video**](https://twitter.com/cyrildiagne/status/1256916982764646402) in twitter has achieved over **5M** views, which is phenomenal and shows us more application probabilities of SOD.
 
 ## U^2-Net Results (176.3 MB)
 
 ![U^2-Net Results](figures/u2netqual.png)
 
 
-## Our previous work: [BASNet (CVPR 2019)](https://github.com/NathanUA/BASNet)
+## Our previous work: [BASNet (CVPR 2019)](https://github.com/vaibhavmit074/remove-bg-2)
 
 ## Required libraries
 
@@ -42,7 +42,7 @@ glob
 ## Usage
 1. Clone this repo
 ```
-git clone https://github.com/NathanUA/U-2-Net.git
+git clone https://github.com/vaibhavmit074/remove-bg-2.git
 ```
 2. Download the pre-trained model [u2net.pth (176.3 MB)](https://drive.google.com/file/d/1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ/view?usp=sharing) or [u2netp.pth (4.7 MB)](https://drive.google.com/file/d/1rbSTGKAE-MTxBYHd-51l2hMOQPT_7EPy/view?usp=sharing) and put it into the dirctory './saved_models/u2net/' and './saved_models/u2netp/'
 
